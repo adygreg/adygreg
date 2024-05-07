@@ -91,6 +91,7 @@ export const EddieRating = () => {
                                     <h1 className="text-2xl font-medium">1. Demonstration</h1>
                                     <p className="text-xl">Like I said, the design is responsive & compactible is various screen layout, with creative solutions.</p>
                                     <img src={resposive} alt="" className="rounded-lg mt-2" />
+                                    <p>**gif doesn't work for safari for some reason</p>
                                 </li>
                                 <li>
                                     <h1 className="text-2xl font-medium">2. Wireframe/Prototype</h1>
