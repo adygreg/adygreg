@@ -12,7 +12,7 @@ export const Skills = () => {
         >
 
             <table className="table-auto border-separate border-spacing-x-3">
-                <caption className="mb-1">Frontend Skills</caption>
+                <caption className="mb-1">Nerd Skills</caption>
                 <tbody>
                     <tr>
                         <th className="text-left"> <label for="prog_1" className="relative bottom-[2px]"> HTML/HTML5 </label> </th>

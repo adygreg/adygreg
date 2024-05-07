@@ -10,8 +10,8 @@ function Project() {
 
     const renderSection = () => {
         switch(activeSection) {
-            case "adygreg":
-                return <AdyGreg/> ;
+            // case "adygreg":
+            //     return <AdyGreg/> ;
             case "eddierating":
                 return <EddieRating/>;
             default:
@@ -26,7 +26,7 @@ function Project() {
             transition={{ duration: 0.5 }}
         >
             <div className="cta space-x-2 space-y-1 text-sm">
-                <input type="button" value="adygreg" onClick={() => setActiveSection("adygreg")} className="button-style" />
+                {/* <input type="button" value="adygreg" onClick={() => setActiveSection("adygreg")} className="button-style" /> */}
                 <input type="button" value="eddierating" onClick={() => setActiveSection("eddierating")} className="button-style" />
             </div>
 

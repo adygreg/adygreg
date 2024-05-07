@@ -11,7 +11,7 @@ export const Education = () => {
             B.Sc. Computer Science - Saarlandes des Universität <small className="opacity-50">[2022-Present]</small>
             <ul className="relative left-3">
                 <li> <i class="fa-solid fa-clipboard-check mr-2"></i> Completed Human Computer Interaction Course</li>
-                <li> <i class="fa-solid fa-clipboard-list mr-2"></i> Enrolled to Interactive Design Course</li>
+                <li> <i class="fa-solid fa-clipboard-list mr-2"></i> Enrolled to Interactive Design & Ethics Course</li>
             </ul>
         </motion.div>
     );
