@@ -1,41 +1,17 @@
-import { useState } from "react";
-import { motion } from "framer-motion";
+import eddierating_thumbnail_b from "/src/assets/images/eddierating_b.jpeg"
+import eddierating_thumbnail from "/src/assets/images/eddierating.jpeg"
 
-import { AdyGreg } from "../posts/project/adygreg";
-import { EddieRating } from "../posts/project/eddierating";
+function Project () {
+    return(
+        <div className="grid grid-cols-2 gap-4 [&>section]:h-[300px] w-full h-full">
 
-function Project() {
+            <section style={{'--image-url': `url(${eddierating_thumbnail})`, '--image-before-url': `url(${eddierating_thumbnail_b})`}} className="project__container box-it relative hover:bg-[image:var(--image-url)] bg-[image:var(--image-before-url)] fredoka">
+                <h1 className="tab__title text-4xl absolute bottom-2 right-2">eddierating<span className="tab_extra">.com</span></h1>
+                <div className="vignette"></div>
+            </section>
 
-    const [activeSection, setActiveSection] = useState("");
-
-    const renderSection = () => {
-        switch(activeSection) {
-            // case "adygreg":
-            //     return <AdyGreg/> ;
-            case "eddierating":
-                return <EddieRating/>;
-            default:
-                return null;
-        }
-    }
-
-    return (
-        <motion.div className="inner-container project-container flex flex-col flex-1 justify-start items-start gap-2"
-            initial={{ opacity: 0, scale: 0.9 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.5 }}
-        >
-            <div className="cta space-x-2 space-y-1 text-sm">
-                {/* <input type="button" value="adygreg" onClick={() => setActiveSection("adygreg")} className="button-style" /> */}
-                <input type="button" value="eddierating" onClick={() => setActiveSection("eddierating")} className="button-style" />
-            </div>
-
-            <div className="w-full flex-1" id="display-box">
-                {renderSection()}
-            </div>
-
-        </motion.div>
-    )
+        </div>
+    );
 }
 
 export default Project;

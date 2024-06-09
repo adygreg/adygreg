@@ -1,5 +1,5 @@
 {
-  "name": "adygreg-redesigned",
+  "name": "adygreg",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,14 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^6.5.2",
-    "@fortawesome/free-brands-svg-icons": "^6.5.2",
-    "@fortawesome/free-regular-svg-icons": "^6.5.2",
-    "@fortawesome/free-solid-svg-icons": "^6.5.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@react-spring/parallax": "^9.7.3",
+    "@react-spring/web": "^9.7.3",
+    "framer-motion": "^11.1.7",
+    "gsap": "^3.12.5",
+    "localforage": "^1.10.0",
+    "match-sorter": "^6.3.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^6.23.1"
+    "react-router-dom": "^6.23.0",
+    "sort-by": "^0.0.2",
+    "use-local-storage": "^3.0.0"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",

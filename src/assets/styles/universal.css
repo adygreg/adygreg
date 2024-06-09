@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Danfo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wdth,wght@75..125,300..700&display=swap");
+:root {
+  --bg-color: #111111F0;
+  --bg-not-color: #FFFFFFF0;
+  --text-color: var(--bg-not-color);
+  --text-not-color: var(--bg-color);
+  --border-color: #bbbbbb;
+  --border-not-color: #e0e0e0;
+  --button-color: var(--bg-color);
+  --button-not-color: var(--bg-not-color);
+}
+
+::-moz-selection {
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+::selection {
+  color: var(--text-color);
+  background: var(--bg-color);
+}
+
+.not-style {
+  background-color: var(--bg-not-color);
+  border: solid 5px var(--border-not-color);
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+}
+.not-style * {
+  color: var(--text-not-color);
+}
+
+html {
+  background-color: var(--bg-color);
+  background-size: cover;
+}
+
+* {
+  color: var(--text-color);
+  font-family: "Gabarito", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  letter-spacing: 0.025em;
+}
+
+strong,
+.font-style {
+  font-family: "Danfo", serif;
+  font-weight: 400;
+  font-variation-settings: "ELSH" 0;
+}
+
+.fredoka * {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.link-style {
+  text-decoration: none;
+  font-size: 1.125rem;
+  font-weight: 500;
+  line-height: 1.75rem;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  -webkit-backdrop-filter: blur(6px);
+          backdrop-filter: blur(6px);
+  transition: 200ms;
+}
+
+.link-style:hover {
+  cursor: pointer;
+  color: var(--text-not-color);
+  background-color: var(--bg-not-color);
+  font-size: 1.45rem;
+}
+
+.link-style:active {
+  opacity: 0.75;
+  font-size: 1.25rem;
+}
+
+.button-style {
+  color: var(--text-color);
+  background: var(--button-color);
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  transition: 150ms;
+  border: 3px solid var(--border-not-color);
+}
+
+.button-style:hover {
+  cursor: pointer;
+  color: var(--text-not-color);
+  background: var(--button-not-color);
+}
+
+.button-style:active {
+  transform: scale(0.9);
+}
+
+.box-it {
+  border: solid 5px var(--border-not-color);
+  border-radius: 1rem;
+}/*# sourceMappingURL=universal.css.map */

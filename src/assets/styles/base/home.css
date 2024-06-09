@@ -1,0 +1,73 @@
+.project__container:hover .tab__title {
+  display: none;
+}
+
+.tab__container, .project__container {
+  overflow: hidden;
+  background-size: cover;
+  background-position: top;
+  filter: grayscale(1);
+  height: 435px;
+  cursor: pointer;
+  transition: 150ms;
+}
+.tab__container *, .project__container * {
+  transition: 150ms;
+}
+.tab__container .tab__title, .project__container .tab__title {
+  color: var(--text-color);
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+  z-index: 1;
+}
+.tab__container .tab__title .tab_extra, .project__container .tab__title .tab_extra {
+  color: var(--text-color);
+  font-weight: 500;
+  display: none;
+}
+.tab__container .vignette, .project__container .vignette {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  box-shadow: 0 0 100px #000000 inset;
+  transition: 100ms;
+}
+
+.tab__container:hover, .project__container:hover {
+  border-color: var(--border-color);
+  filter: grayscale(0);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.2509803922);
+  transform: scale(1.02);
+}
+.tab__container:hover .tab__title, .project__container:hover .tab__title {
+  background-color: rgba(0, 0, 0, 0.5647058824);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+.tab__container:hover .tab__title .tab_extra, .project__container:hover .tab__title .tab_extra {
+  display: inline;
+}
+.tab__container:hover .vignette, .project__container:hover .vignette {
+  box-shadow: 0 0 0px #000000 inset;
+}
+
+.tab__container:active, .project__container:active {
+  transform: scale(0.95);
+}
+
+.feature__section h1 {
+  padding: 0.25rem 1rem;
+  border-radius: 1rem;
+}
+
+.feature__section:hover h1 {
+  margin-right: 10rem;
+  background-color: rgba(0, 0, 0, 0.5647058824);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+.feature__section:hover h1 span {
+  font-size: 3rem;
+}/*# sourceMappingURL=home.css.map */
