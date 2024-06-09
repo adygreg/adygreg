@@ -4,6 +4,7 @@ import Navigation from "./components/nav"
 import Home from "./pages/base/home";
 import About from "./pages/base/about";
 import Design from "./pages/base/design";
+import Art from "./pages/base/art";
 import Project from "./pages/base/project";
 import Contact from "./pages/base/contact";
 
@@ -22,6 +23,7 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/about" element={<About />} />
               <Route path="/design" element={<Design />} />
+              <Route path="/art" element={<Art />} />
               <Route path="/project" element={<Project />} />
               <Route path="/contact" element={<Contact />} />
             </Routes>

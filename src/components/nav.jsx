@@ -11,6 +11,7 @@ function Navigation () {
             <ul className="cta__section [&>li]:inline">
                 <li><Link to="/about" className="link-style text-xl">about</Link></li>
                 <li><Link to="/design" className="link-style text-xl">design</Link></li>
+                <li><Link to="/art" className="link-style text-xl">art</Link></li>
                 <li><Link to="/project" className="link-style text-xl">project</Link></li>
                 <li><Link to="/contact" className="link-style text-xl">contact</Link></li>
                 <li><button type="button"  to="/contact" className="button-style text-lg py-0 px-4 ml-5">EN/UK</button></li>
