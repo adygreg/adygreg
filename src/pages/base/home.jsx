@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
 
 import profile_picture from "/src/assets/images/profile.png"
+
 import test_image from "/src/assets/images/test_image.png"
+import test_image_2 from "/src/assets/images/test_image_2.png"
+
+import Tab from "../../components/tab";
 
 function Home () {
     return(
-        <div className="flex flex-wrap gap-4 w-full h-full">
+        <div className="flex flex-wrap gap-x-4 gap-y-2 w-full h-full">
 
             <Link to="/about" className="decoration-transparent h-fit">
                 <div className="tab__container profile__section box-it w-fit overflow-hidden">
@@ -18,12 +22,21 @@ function Home () {
                 </div>
             </Link>
 
-            <div style={{'--image-url': `url(${test_image})`}} className={`tab__container feature__section box-it overflow-hidden relative flex-1 bg-[image:var(--image-url)]`}>
-                {/* <img src={test_image} alt="" className="h-fit w-full object-fill" /> */}
-                <h1 className="absolute z-10 text-4xl bottom-4 left-4 text-white">explore some <span className="font-style text-white">Designs</span></h1>
-                <div className="vignette"></div>
-            </div>
-            
+            <Tab link={"/design"} image={test_image} color={"#0E1D0D"} title={"explore new"} extra={"designs"} extra_class={"flex-1"}/>
+
+            <div className="break basis-full"></div>
+
+            <Tab link={"/art"} image={test_image_2} color={"#E9D4D6"} title={"dive into"} extra={"art"} vignette={false} extra_class={"flex-1 h-[252px]"} />
+
+
+            <Link to="/about" className="decoration-transparent flex h-[252px]">
+                <div className="tab__container box-it w-fit overflow-hidden h-full flex justify-center items-center">
+                    <div className="p-8 flex flex-col items-end gap-2 ">
+                        <quote className="__brief text-base">Art is everywhere, woven into the fabric of existence. <br /> It is unavoidable, and its presence is undeniable.</quote>
+                        <p className="">~ AdyGreg</p>
+                    </div>
+                </div>
+            </Link>
 
         </div>
     );

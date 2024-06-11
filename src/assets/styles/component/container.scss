@@ -1,18 +1,10 @@
-.project__container {
-    @extend .tab__container;
-}
-.project__container:hover {
-    .tab__title {
-        display: none;
-    }
-}
-
 .tab__container {
 
     overflow: hidden;
 
-    background-size: cover;
-    background-position: top;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     filter: grayscale(1);
 
     height: 435px;
@@ -23,6 +15,15 @@
 
     * {
         transition: 150ms;
+    }
+
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .75rem;
+        padding: 0.25rem 1rem;
+        border-radius: 1rem;
     }
 
     .tab__title {
@@ -56,6 +57,16 @@
     box-shadow: 5px 5px 20px #00000040;
     transform: scale(1.02);
 
+    h1 {
+        margin-right: 10rem;
+        background-color: #00000090;
+        backdrop-filter: blur(8px);
+
+        span {
+            font-size: 3rem;
+        }
+    }
+
     .tab__title {
         background-color: #00000090;
         backdrop-filter: blur(8px);
@@ -71,25 +82,4 @@
 
 .tab__container:active {
     transform: scale(.95);
-}
-
-
-.feature__section {
-    h1 {
-        padding: 0.25rem 1rem;
-        border-radius: 1rem;
-    }
-
-}
-
-.feature__section:hover {
-    h1 {
-        margin-right: 10rem;
-        background-color: #00000090;
-        backdrop-filter: blur(8px);
-
-        span {
-            font-size: 3rem;
-        }
-    }
 }

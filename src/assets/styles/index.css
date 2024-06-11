@@ -1,6 +1,6 @@
 @import url("universal.css");
 
-@import url("./base/home.css");
+@import url("./component/container.css");
 
 * {
     padding: 0px;
