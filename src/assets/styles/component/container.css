@@ -1,6 +1,6 @@
 .tab__container {
   overflow: hidden;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   filter: grayscale(1);

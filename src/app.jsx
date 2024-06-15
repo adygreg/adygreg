@@ -8,6 +8,8 @@ import Art from "./pages/base/art";
 import Project from "./pages/base/project";
 import Contact from "./pages/base/contact";
 
+import IGreg from "/src/pages/article/igreg.jsx";
+
 function App() {
 
   return (
@@ -26,6 +28,8 @@ function App() {
               <Route path="/art" element={<Art />} />
               <Route path="/project" element={<Project />} />
               <Route path="/contact" element={<Contact />} />
+
+              <Route path="/igreg" element={<IGreg />} />
             </Routes>
           </div>
 
