@@ -83,3 +83,21 @@
 .tab__container:active {
     transform: scale(.95);
 }
+
+
+.box-it {
+    border: solid 5px var(--border-not-color);
+    border-radius: 1rem;
+}
+
+.boxed__container {
+    filter: grayscale(.75);
+    @extend .box-it;
+    transition: 150ms;
+}
+.boxed__container:hover {
+    z-index: 10;
+    filter: grayscale(0);
+    transform: scale(1.02);
+    box-shadow: 4px 4px 16px rgb(0 0 0 / .5);
+}

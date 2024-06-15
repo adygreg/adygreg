@@ -24,7 +24,7 @@ export default Art;
 
 function Tab({img, title, date}) {
     return(
-        <div className="box-it h-fit overflow-hidden">
+        <div className="boxed__container h-fit overflow-hidden">
                 <img src={img} alt={title + " drawing"} className="h-80"/>
                 <h2 className="pt-1 pb-2 px-4 flex justify-between items-end">
                     {title}
