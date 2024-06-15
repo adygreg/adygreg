@@ -1,3 +1,12 @@
+.box-it {
+    border: solid 5px var(--border-not-color);
+    border-radius: 1rem;
+}
+
+.shadow-it {
+    box-shadow: 4px 4px 12px rgb(0 0 0 / .25);
+}
+
 .tab__container {
 
     overflow: hidden;
@@ -54,7 +63,7 @@
 
     filter: grayscale(0);
 
-    box-shadow: 5px 5px 20px #00000040;
+    @extend .shadow-it;
     transform: scale(1.02);
 
     h1 {
@@ -84,20 +93,14 @@
     transform: scale(.95);
 }
 
-
-.box-it {
-    border: solid 5px var(--border-not-color);
-    border-radius: 1rem;
-}
-
 .boxed__container {
     filter: grayscale(.75);
-    @extend .box-it;
     transition: 150ms;
+    @extend .box-it;
 }
 .boxed__container:hover {
     z-index: 10;
     filter: grayscale(0);
     transform: scale(1.02);
-    box-shadow: 4px 4px 16px rgb(0 0 0 / .5);
+    @extend .shadow-it;
 }
