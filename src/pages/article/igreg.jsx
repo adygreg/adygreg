@@ -12,7 +12,7 @@ function igreg() {
             
             <div className="basis-full">
                 <h1>iGreg: The Computer Website</h1>
-                <p>The main inspiration</p>
+                <p className="mt-1">The main inspiration behind creating this design is to highlight how iMac G3 revolutionized the computer industry with it's its innovative design, featuring bold aesthetics, an all-in-one form factor and user-friendly features.</p>
             </div>
 
             <div className="hero_image space-x-4 [&>div]:inline">
