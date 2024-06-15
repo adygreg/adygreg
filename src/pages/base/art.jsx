@@ -4,10 +4,12 @@ import drawing_3 from "/src/assets/images/drawing/Car.jpg"
 import drawing_4 from "/src/assets/images/drawing/Space.jpg"
 import drawing_5 from "/src/assets/images/drawing/Portrait.jpg"
 import drawing_6 from "/src/assets/images/drawing/Miami.jpg"
+import drawing_7 from "/src/assets/images/drawing/Lemon.jpg"
 
 function Art () {
     return(
         <div className="flex justify-center gap-5 flex-wrap w-full h-full">
+            <Tab img={drawing_7} title={"Lemon"} date={"15/06/24"} />
             <Tab img={drawing_6} title={"Miami"} date={"14/06/24"} />
             <Tab img={drawing_5} title={"Portrait"} date={"14/06/24"} />
             <Tab img={drawing_4} title={"Space"} date={"13/06/24"} />
