@@ -12,14 +12,14 @@ function Art () {
     return(
         <div className="flex justify-center gap-5 flex-wrap w-full h-full">
             <Tab img={drawing_9} title={"Baka"} date={"18/06/24"} />
-            <Tab img={drawing_8} title={"Art"} date={"18/06/24"} />
+            {/* <Tab img={drawing_8} title={"Art"} date={"18/06/24"} /> */}
             <Tab img={drawing_7} title={"Lemon"} date={"15/06/24"} />
             <Tab img={drawing_6} title={"Miami"} date={"14/06/24"} />
             <Tab img={drawing_5} title={"Portrait"} date={"14/06/24"} />
-            <Tab img={drawing_4} title={"Space"} date={"13/06/24"} />
+            {/* <Tab img={drawing_4} title={"Space"} date={"13/06/24"} /> */}
             <Tab img={drawing_3} title={"Car"} date={"12/06/24"} />
             <Tab img={drawing_2} title={"Landscape"} date={"11/06/24"} />
-            <Tab img={drawing_1} title={"Ornaments"} date={"10/06/24"} />
+            {/* <Tab img={drawing_1} title={"Ornaments"} date={"10/06/24"} /> */}
         </div>
     );
 }
