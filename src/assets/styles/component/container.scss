@@ -104,3 +104,19 @@
     transform: scale(1.02);
     @extend .shadow-it;
 }
+
+.article__section {
+    background: #160091 ;
+    *{
+        display: none;
+    }
+    transition: 1000ms;
+}
+.article__section:hover {
+    background: none !important;
+    *{
+        display: flex;
+        padding: 0rem 0.25rem;
+        border-radius: .25rem;
+    }
+}

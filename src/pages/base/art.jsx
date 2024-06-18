@@ -7,10 +7,12 @@ import drawing_6 from "/src/assets/images/drawing/Miami.jpg"
 import drawing_7 from "/src/assets/images/drawing/Lemon.jpg"
 import drawing_8 from "/src/assets/images/drawing/Art.jpg"
 import drawing_9 from "/src/assets/images/drawing/Baka.jpg"
+import drawing_10 from "/src/assets/images/drawing/NYC.jpg"
 
 function Art () {
     return(
         <div className="flex justify-center gap-5 flex-wrap w-full h-full">
+            <Tab img={drawing_10} title={"Liberty"} date={"18/06/24"} />
             <Tab img={drawing_9} title={"Baka"} date={"18/06/24"} />
             {/* <Tab img={drawing_8} title={"Art"} date={"18/06/24"} /> */}
             <Tab img={drawing_7} title={"Lemon"} date={"15/06/24"} />

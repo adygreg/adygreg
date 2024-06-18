@@ -1,3 +1,5 @@
+import tbnail from "/src/assets/images/tbnail.jpg";
+
 function About() {
 
     let date = new Date();
@@ -14,7 +16,8 @@ function About() {
     return (
         <div className="w-full h-full flex flex-col gap-2">
 
-            <article className="article__section flex flex-col justify-end rounded-lg box-it p-4 h-[300px]">
+            <article style={{ backgroundImage: `url(${tbnail})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
+            className="article__section overflow-hidden flex flex-col justify-end rounded-xl box-it p-4 h-[300px] gap-1 [&>*]:w-fit">
                 <h1>Adrian Gregory Fernandez</h1>
                 <h3>UX Designer / Frontend Developer / Music Critic</h3>
                 <p className="mt-2 opacity-80">
