@@ -128,6 +128,13 @@ strong,
     transform: scale(0.90);
 }
 
+.button-style-2 {
+    @extend .button-style;
+    
+    color: var(--text-not-color);
+    background-color: transparent;
+}
+
 // ----- STYLE COMPONENTS -----
 
 .box-it {

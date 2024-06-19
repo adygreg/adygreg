@@ -88,21 +88,4 @@
   z-index: 10;
   filter: grayscale(0);
   transform: scale(1.02);
-}
-
-.article__section {
-  background: #160091;
-  transition: 1000ms;
-}
-.article__section * {
-  display: none;
-}
-
-.article__section:hover {
-  background: none !important;
-}
-.article__section:hover * {
-  display: flex;
-  padding: 0rem 0.25rem;
-  border-radius: 0.25rem;
 }/*# sourceMappingURL=container.css.map */

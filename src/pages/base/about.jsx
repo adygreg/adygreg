@@ -1,4 +1,4 @@
-import tbnail from "/src/assets/images/tbnail.jpg";
+import cv from "/src/assets/documents/cv.pdf";
 
 function About() {
 
@@ -14,10 +14,9 @@ function About() {
     }
 
     return (
-        <div className="w-full h-full flex flex-col gap-2">
+        <div className="w-full h-full grid grid-cols-3 gap-2">
 
-            <article style={{ backgroundImage: `url(${tbnail})`, backgroundSize: 'cover', backgroundPosition: 'center' }}
-            className="article__section overflow-hidden flex flex-col justify-end rounded-xl box-it p-4 h-[300px] gap-1 [&>*]:w-fit">
+            <article className="article__section overflow-hidden col-span-3 flex flex-col justify-end rounded-xl box-it p-4 h-[300px] gap-1 [&>*]:w-fit">
                 <h1>Adrian Gregory Fernandez</h1>
                 <h3>UX Designer / Frontend Developer / Music Critic</h3>
                 <p className="mt-2 opacity-80">
@@ -27,17 +26,22 @@ function About() {
                 </p>
             </article>
 
-            <div className="options__section grid grid-cols-3 gap-2 [&>div]:h-[200px]">
-                
-                <div className="box-it relative px-3 py-2">
+            <div className="options__section">
+                <div className="box-it relative px-3 py-2 h-full" >
                     <h2 className="text-3xl absolute right-4 bottom-2">Social</h2>
-                    <div className="[&>i]:text-4xl [&>i]:cursor-pointer space-x-2">
-                        <i className="fa-brands fa-github"></i>
-                        <i className="fa-brands fa-x-twitter"></i>
-                        <i className="fa-brands fa-linkedin"></i>
+                    <div className="[&>a]:text-4xl [&>a]:cursor-pointer space-x-2">
+                        <a href="https://github.com/adygreg" target="_blank"><i className="fa-brands fa-github"></i></a>
+                        <a href="https://x.com/adygregz" target="_blank"><i className="fa-brands fa-x-twitter"></i></a>
+                        <a href="https://linkedin.com/in/adygreg" target="_blank"><i className="fa-brands fa-linkedin"></i></a>
                     </div>
                 </div>
+            </div>
 
+            <div className="options__section">
+                <div className="box-it relative px-3 py-4 h-full" >
+                    <h2 className="text-3xl absolute right-4 bottom-2">Resume</h2>
+                    <a href={cv} download="Resume" className="button-style-2 decoration-transparent text-base px-3">Download</a>
+                </div>
             </div>
 
         </div>

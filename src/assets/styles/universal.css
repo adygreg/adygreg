@@ -82,7 +82,7 @@ strong,
   font-size: 1.25rem;
 }
 
-.button-style {
+.button-style, .button-style-2 {
   color: var(--text-color);
   background: var(--button-color);
   padding: 0.5rem;
@@ -91,14 +91,19 @@ strong,
   border: 3px solid var(--border-not-color);
 }
 
-.button-style:hover {
+.button-style:hover, .button-style-2:hover {
   cursor: pointer;
   color: var(--text-not-color);
   background: var(--button-not-color);
 }
 
-.button-style:active {
+.button-style:active, .button-style-2:active {
   transform: scale(0.9);
+}
+
+.button-style-2 {
+  color: var(--text-not-color);
+  background-color: transparent;
 }
 
 .box-it {
