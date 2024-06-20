@@ -18,7 +18,7 @@ function About() {
 
             <article className="article__section overflow-hidden col-span-3 flex flex-col justify-end rounded-xl box-it p-4 h-[300px] gap-1 [&>*]:w-fit">
                 <h1>Adrian Gregory Fernandez</h1>
-                <h3>UX Designer / Frontend Developer / Music Critic</h3>
+                <h3>Designer / Frontend Developer / Music Critic</h3>
                 <p className="mt-2 opacity-80">
                     I'm {getMyAge("2001-08-30")} year old Computer Science Student and self-taught UX Designer & Web Developer.
                     I love the idea of making technology Easy & Enjoyable for people to use.
