@@ -12,10 +12,12 @@ import drawing_11 from "/src/assets/images/drawing/Red.jpg"
 import drawing_12 from "/src/assets/images/drawing/Mountain.jpg"
 import drawing_13 from "/src/assets/images/drawing/Fwæh.jpg"
 import drawing_14 from "/src/assets/images/drawing/Sunset.jpg"
+import drawing_15 from "/src/assets/images/drawing/T_Pain.jpg"
 
 function Art () {
     return(
         <div className="flex justify-center gap-5 flex-wrap w-full h-full">
+            <Tab img={drawing_15} title={"T Pain"} date={"26/06/24"} />
             <Tab img={drawing_14} title={"Sunset"} date={"24/06/24"} />
             <Tab img={drawing_13} title={"Geometrics"} date={"24/06/24"} />
             <Tab img={drawing_12} title={"Ranges"} date={"23/06/24"} />
