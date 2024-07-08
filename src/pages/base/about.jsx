@@ -1,4 +1,5 @@
 import cv from "/src/assets/documents/cv.pdf";
+import portfolio from "/src/assets/documents/portfolio.pdf";
 
 function About() {
 
@@ -39,8 +40,17 @@ function About() {
 
             <div className="options__section">
                 <div className="box-it relative px-3 py-4 h-full" >
-                    <h2 className="text-3xl absolute right-4 bottom-2">Resume</h2>
+                    <h2 className="text-3xl absolute right-4 bottom-6">Resume</h2>
+                    <p className="text-sm font-normal absolute right-4 bottom-2 opacity-50">last updated on 02/06/2024</p>
                     <a href={cv} download="Resume" className="button-style-2 decoration-transparent text-base px-3">Download</a>
+                </div>
+            </div>
+            
+            <div className="options__section">
+                <div className="box-it relative px-3 py-4 h-full" >
+                    <h2 className="text-3xl absolute right-4 bottom-6">Portfolio</h2>
+                    <p className="text-sm font-normal absolute right-4 bottom-2 opacity-50">last updated on 04/07/2024</p>
+                    <a href={portfolio} download="Portfolio" className="button-style-2 decoration-transparent text-base px-3">Download</a>
                 </div>
             </div>
 
